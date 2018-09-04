@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MissionDespawner : MonoBehaviour {
 
+
     #region Startando o timer para despawnar
     void Start () {
         StartCoroutine(DeSpawnTimer());
@@ -13,13 +14,14 @@ public class MissionDespawner : MonoBehaviour {
     IEnumerator DeSpawnTimer()
     {
         yield return new WaitForSeconds(8);
-        Destroy(gameObject);
+        DeSpawn();
     }
     #endregion
     #region função para botao no evento "on click"
     public void DeSpawn()
     {
         //Aqui seria inserido codigo para adicionar pontos antes de deletar esse game object
+        MissionManager.instance.lowMissionCount--;
         StopAllCoroutines();
         Destroy(gameObject);
     }
