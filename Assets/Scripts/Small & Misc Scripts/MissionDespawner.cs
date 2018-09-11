@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MissionDespawner : MonoBehaviour {
 
+    /// Script Mission Despawner
+    /// Script básico criado apenas para remover ou "despawnar" as missões do mapa
+    /// Por: Leonardo Delafiori
 
     #region Startando o timer para despawnar
     void Start () {

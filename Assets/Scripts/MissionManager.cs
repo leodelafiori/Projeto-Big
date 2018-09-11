@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// Mission manager
+/// Script criado para gerenciar o spawn de missões (timer e local)
+/// Por: Leonardo Delafiori
+
 public class MissionManager : MonoBehaviour {
+    
     #region declaring variables
     //Main Variables
     public static MissionManager instance = null;
@@ -29,7 +34,6 @@ public class MissionManager : MonoBehaviour {
     public int lowMissionCount;
     public int highMissionCount;
     #endregion
-
     #region void Awake, setando o manager pra persistir por leveis, etc
     void Awake()
     {
@@ -45,14 +49,12 @@ public class MissionManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
     #endregion
-
     #region Update
     void Update()
     {
         SpawnMission();
     }
     #endregion
-
     #region SpawnMission function and coroutines
     void SpawnMission()
     {

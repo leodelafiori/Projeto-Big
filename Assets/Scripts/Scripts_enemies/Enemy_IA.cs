@@ -13,6 +13,7 @@ public class Enemy_IA : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector2.MoveTowards(transform.Translate() = new Vector3(target.transform.position.x, target.transform.position, );
+        //Comentei a linha porque tava dando "compile error", e nao da pra dar playtest com o erro.
+        //transform.position = Vector2.MoveTowards(transform.Translate() = new Vector3(target.transform.position.x, target.transform.position, );
 	}
 }

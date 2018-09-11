@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// HeroGenerator
+/// Script para geração automatica de personagens
+/// por: Leonardo Delafiori
+
 public class HeroGenerator : MonoBehaviour {
 
     #region Declaring Variables
